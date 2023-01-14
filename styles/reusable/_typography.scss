@@ -1,0 +1,109 @@
+h1.typography_default,
+h2.typography_default,
+h3.typography_default,
+h4.typography_default,
+h5.typography_default,
+h6.typography_default {
+  font-family: $font-family-secondary;
+  margin: 0;
+}
+
+span.typography_default,
+a.typography_default,
+i.typography_default,
+li.typography_default,
+p.typography_default {
+  font-family: $font-family-primary;
+}
+
+
+//fa-typography(font-size, line-height, font-weight)
+h1.typography_default {
+  @include fa-typography(75px, 60px, 700);
+}
+
+h2.typography_default {
+  @include fa-typography(48px, 52px, 800);
+}
+
+h3.typography_default {
+  @include fa-typography(40px, 44px, 800);
+}
+
+h4.typography_default {
+  @include fa-typography(32px, 35px, 800);
+}
+
+h5.typography_default {
+  @include fa-typography(28px, 26px, 800);
+}
+
+h6.typography_default {
+  @include fa-typography(20px, 22px, 800);
+}
+
+.fa_typography__body1 {
+  @include fa-typography(20px, 28px, 700);
+}
+
+.fa_typography__body2 {
+  @include fa-typography(20px, 28px, 400);
+}
+
+.fa_typography__body3 {
+  @include fa-typography(18px, 25px, 700);
+}
+
+.fa_typography__body4 {
+  @include fa-typography(18px, 25px, 400);
+}
+
+.fa_typography__body5 {
+  @include fa-typography(16px, 22px, 700);
+}
+
+.fa_typography__body6 {
+  @include fa-typography(16px, 22px, 400);
+}
+
+.fa_typography__body7 {
+  @include fa-typography(14px, 20px, 700);
+}
+
+.fa_typography__body8 {
+  @include fa-typography(14px, 20px, 400);
+}
+
+.fa_typography__body9 {
+  @include fa-typography(11px, 13px, 700);
+}
+
+.fa_typography__body10 {
+  @include fa-typography(11px, 13px, 400);
+}
+
+//States || Color
+.fa_typography__default {
+  color: $fa-black; //black text
+}
+
+.fa_typography__primary {
+  color: $fa-white; // white
+}
+
+.fa_typography__secondary {
+  color: $fa-grey-300; //grey
+}
+
+.fa_typography__tetiary {
+  color: $fa-secondary-300; //blue
+}
+
+.fa_typography__error {
+  color: $fa-error; //red
+}
+
+//Display
+.fa_typography__inline {
+  display: inline-block;
+}

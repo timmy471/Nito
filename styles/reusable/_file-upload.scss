@@ -1,0 +1,33 @@
+.file-upload-container {
+    background-color: $fa-white;
+    border: 1px solid $fa-grey-400;
+    border-radius: 6px;
+    cursor: pointer;
+
+    padding: .31rem .3rem;
+
+    button {
+        height: 2.4rem;
+        width: 6.7rem;
+    }
+
+    p {
+        word-break: break-all;
+    }
+
+    &__multiple {
+        padding: 1rem 1.5rem;
+        border: none;
+
+        div {
+            p {
+                // color: 
+                margin-bottom: 0
+            }
+        }
+    }
+}
+
+.file-upoad__error {
+    border: 1px solid $fa-error
+}

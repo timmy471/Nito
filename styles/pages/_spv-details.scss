@@ -1,0 +1,629 @@
+.spv-details {
+  .sub-menu {
+    min-height: 30px;
+    max-width: 100%;
+    border: 1px solid $fa-success;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .fund-info {
+    margin-top: 10px;
+    min-height: 145px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    border-radius: 7px;
+
+    .logo-box {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $fa-white;
+      margin-right: .5rem;
+
+      img {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    h1 {
+      font-family: $font-family-secondary;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      text-justify: inter-word;
+      text-align: justify;
+      margin-right: 1rem;
+    }
+
+    span {
+      font-family: $font-family-primary;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 11px;
+    }
+
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 150%;
+      font-family: $font-family-primary;
+      color: #828282;
+      text-align: justify;
+    }
+
+    .raising {
+      padding: 7px 15px;
+      background: rgba(67, 176, 241, 0.07);
+      border-radius: 25px;
+      font-family: $font-family-primary;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 18px;
+      align-items: center;
+      text-align: center;
+      color: $fa-primary-100;
+    }
+
+    .series {
+      background: #e0e0e0;
+      border-radius: 25px;
+      padding: 4px 15px;
+      display: block;
+      // width: 74px;
+      width: fit-content;
+      height: 26px;
+    }
+
+    .card {
+      background-color: $fa-white;
+      min-height: 100px;
+      width: 100%;
+      border-radius: 10px;
+      padding: 10px;
+      margin-top: 30px;
+      margin-right: 10px;
+      max-height: 150px;
+
+      h6 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 11px;
+        color: #828282;
+      }
+
+      h2 {
+        font-family: $font-family-secondary;
+        font-weight: 700;
+        font-size: 24px;
+        margin: 0px;
+      }
+
+      span {
+        font-weight: 400;
+        font-size: 11px;
+      }
+    }
+  }
+
+  .search-container {
+    margin-top: 20px;
+    min-height: 140px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    border-radius: 7px;
+
+    .top-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-family: $font-family-primary;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      color: #1d1d1d;
+    }
+
+    .search-input {
+      height: 50px;
+      background: #ffffff;
+      border-radius: 6px;
+    }
+
+    .search-input:hover {
+      outline: none;
+    }
+
+    .fm-dropdown {
+      width: 100%;
+      height: 50px;
+      border-radius: 6px;
+      float: left;
+      text-align: left;
+      border-color: transparent;
+
+      .mleft-3 {
+        margin-left: 3rem;
+      }
+    }
+
+    .fm-dropdown:hover {
+      border: transparent;
+      color: $fa-black;
+    }
+  }
+
+  .fund-tab {
+    font-weight: 700;
+    font-size: 13px;
+    margin-top: 40px;
+    gap: 10px;
+    color: #828282;
+    cursor: pointer;
+
+    .active {
+      text-decoration: underline;
+      text-decoration-color: #43b0f1;
+      text-decoration-thickness: 3px;
+      color: $fa-black;
+      text-underline-offset: 4px;
+    }
+  }
+
+  .fund-link {
+    margin-top: 20px;
+    min-height: 140px;
+    background: rgba(67, 176, 241, 0.1);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    border-radius: 7px;
+
+    p {
+      font-weight: 700;
+      font-size: 13px;
+      margin: 0;
+    }
+
+    .copy-link-input {
+      border-radius: 6px;
+      height: 40px;
+      border-color: transparent;
+      margin: 10px 0px;
+    }
+  }
+
+  .fund-form {
+    margin-top: 20px;
+    min-height: 140px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    border-radius: 7px;
+
+    label {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    span {
+      display: block;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      color: #828282;
+    }
+
+    .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+      color: $fa-black;
+      font-weight: 700;
+      font-size: 11px;
+      text-shadow: 0 0 0.25px currentcolor;
+    }
+
+    .ant-tabs-tab-btn {
+      color: #828282;
+      font-weight: 700;
+      font-size: 11px;
+    }
+
+    .ant-tabs-ink-bar {
+      position: absolute;
+      background: #43b0f1;
+      height: 3px;
+      pointer-events: none;
+    }
+
+    .text-input-field {
+      background: #ffffff;
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.03);
+      border-radius: 5px;
+      height: 40px;
+      border: none;
+      margin-top: 5px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    .ant-radio-wrapper {
+      label {
+        font-weight: 600;
+        font-size: 12px;
+        color: $fa-grey-200;
+      }
+    }
+
+    .text-input-field::placeholder {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    .info {
+      background: rgba(47, 128, 237, 0.05);
+      min-height: 62px;
+      max-height: 80px;
+      padding: 13px;
+
+      p {
+        font-weight: 400;
+        font-size: 12px;
+      }
+    }
+
+    .warning {
+      background: rgba(251, 187, 7, 0.05);
+      min-height: 62px;
+      max-height: 80px;
+      padding: 13px;
+
+      p {
+        font-weight: 400;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .fund-table {
+    margin-top: 20px;
+
+    @include smMaxBreakPoint {
+      display: none;
+      visibility: hidden;
+    }
+
+    @include mdMaxBreakPoint {
+      display: none;
+      visibility: hidden;
+    }
+
+    @include lgMaxBreakPoint {
+      display: none;
+      visibility: hidden;
+    }
+
+    .ant-table-content {
+      background-color: #edf5f9;
+    }
+
+    .ant-table-thead>tr>th {
+      position: relative;
+      color: rgba(0, 0, 0, 0.85);
+      font-weight: 500;
+      text-align: left;
+      background: #edf5f9;
+      border-bottom: 1px solid #f0f0f0;
+      transition: background 0.3s ease;
+      font-family: $font-family-primary;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 18px;
+      align-items: center;
+      color: #828282;
+      border: none;
+
+      b {
+        color: $fa-black;
+
+        span {
+          font-weight: 600;
+          color: #828282;
+        }
+      }
+    }
+
+    .ant-table-tbody>tr {
+      background: rgba(255, 255, 255, 0.5);
+      background-color: rgba(255, 255, 255, 0.5);
+      box-shadow: 0px 3.92814px 19.6407px rgba(0, 0, 0, 0.05);
+      min-height: 70px;
+      transition: background 0.3s;
+      border-radius: 7px;
+      height: 70px;
+    }
+
+    .ant-table-thead>tr>th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 1px;
+      height: 1.6em;
+      background-color: rgba(0, 0, 0, 0.06);
+      transform: translateY(-50%);
+      transition: background-color 0.3s;
+      content: none;
+    }
+
+    .ant-table table {
+      cursor: pointer;
+      border-spacing: 0 10px;
+    }
+
+    td:first-child {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+
+    td:last-child {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    span {
+      font-family: $font-family-primary;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 20px;
+      align-items: center;
+      color: #1d1d1d;
+    }
+
+    .stage-pill {
+      padding: 7px 15px;
+      background: #e0e0e0;
+      border-radius: 25px;
+      font-family: $font-family-primary;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      align-items: center;
+      text-align: center;
+      color: #1d1d1d;
+    }
+
+    .wired {
+      padding: 7px 15px;
+      background: #e0e0e0;
+      border-radius: 25px;
+      font-family: $font-family-primary;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 18px;
+      align-items: center;
+      text-align: center;
+      color: #1d1d1d;
+    }
+
+    .closing {
+      padding: 7px 15px;
+      background: rgba(255, 168, 0, 0.07);
+      border-radius: 25px;
+      font-family: $font-family-primary;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 18px;
+      align-items: center;
+      text-align: center;
+      color: #ffa800;
+    }
+
+    .raising {
+      padding: 7px 15px;
+      background: rgba(67, 176, 241, 0.07);
+      border-radius: 25px;
+      font-family: $font-family-primary;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 18px;
+      align-items: center;
+      text-align: center;
+      color: $fa-primary-100;
+    }
+
+    .subscriber {
+      // display: flex;
+      margin: 0px;
+      padding: 0px;
+
+      h4 {
+        font-family: $font-family-primary;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        color: #1d1d1d;
+        display: inline-block;
+        margin-left: 10px;
+        margin-left: 20px;
+        margin-top: 10px;
+
+        span {
+          font-family: $font-family-primary;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          color: #828282;
+        }
+      }
+
+      a {
+        font-family: $font-family-primary;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 16px;
+        color: #2f80ed;
+        margin: 20px;
+      }
+    }
+  }
+
+  .spv-details-accordion-container {
+    display: none;
+    visibility: hidden;
+
+    @include smMaxBreakPoint {
+      display: block;
+      visibility: visible;
+    }
+
+    @include mdMaxBreakPoint {
+      display: block;
+      visibility: visible;
+    }
+
+    @include lgMaxBreakPoint {
+      display: block;
+      visibility: visible;
+    }
+
+    .wallet-accordion-panel {
+      border-radius: 12px !important;
+      background-color: $fa-white;
+      margin-bottom: 5px;
+    }
+
+    .ant-collapse-item-active {
+      background: transparent;
+      border: 1px solid $fa-grey-500;
+    }
+
+    .ant-collapse-borderless,
+    .ant-collapse {
+      background-color: transparent;
+    }
+
+    .ant-collapse-header-text {
+      width: 100%;
+    }
+
+    .wallet-detail {
+      line-height: 10px;
+      font-weight: 600;
+      color: #393636;
+    }
+  }
+}
+
+.lp-detail-container {
+  .lp-detail {
+    margin-left: -0.7rem;
+  }
+
+  .date-created {
+    margin-top: -0.5rem;
+    font-size: 13px;
+  }
+
+  .about {
+    font-size: 13px;
+    margin-bottom: 0.5rem;
+
+    &__link {
+      margin-top: -0.2rem;
+    }
+  }
+
+  .founder {
+    margin-right: 5rem;
+  }
+
+  .action-ctas {
+    .fa_btn__secondary {
+      width: 120px;
+    }
+
+    @include mdMaxBreakPoint {
+      flex-direction: column-reverse;
+
+      button {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}
+
+.lp-status-pill {
+  display: flex;
+  padding: 7px 20px;
+  height: 32px;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 25px;
+
+  @include xlMaxBreakPoint {
+    padding: 9px 16px 7px;
+    margin-top: -0.6rem;
+  }
+
+  &__raising {
+    background: rgba(47, 128, 237, 0.07);
+
+    p {
+      color: $fa-info;
+    }
+  }
+
+  &__closed {
+    background: rgba(235, 87, 87, 0.07);
+
+    p {
+      color: $fa-error;
+    }
+  }
+
+  &__seed {
+    margin: -0.2rem 0 0 1rem;
+    padding: 5px 16px 2px;
+    height: 1.6rem;
+  }
+}
+
+.empty-lp-data {
+  min-height: 200px;
+  padding-top: 30px;
+
+  border-radius: 7px;
+  text-align: center;
+
+  @include xlMaxBreakPoint {
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  span {
+    color: $fa-white  !important;
+  }
+}

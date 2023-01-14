@@ -1,0 +1,94 @@
+.top-header {
+  background: $fa-white;
+  height: 80px;
+  padding: 1.4rem 3rem 0 1rem;
+
+  .mobile-hambugger {
+    display: none;
+
+    @include lgMaxBreakPoint {
+      display: block;
+      margin-right: 1rem;
+    }
+  }
+
+  .login-time {
+    display: flex;
+
+    p {
+      color: $fa-grey-300;
+      font-size: 13px;
+    }
+
+    @include mdMaxBreakPoint {
+      flex-direction: column;
+      margin-top: -.9rem;
+      font-size: 10px;
+
+      p:nth-child(2) {
+        margin-top: -3.5rem;
+      }
+    }
+
+    @include smMaxBreakPoint {
+      display: none;
+    }
+  }
+
+  .user-avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: .9rem;
+  }
+
+  .page-title {
+    line-height: inherit;
+    margin-right: 1.7rem
+  }
+
+  .user-detail {
+    margin-right: 1rem;
+
+    p {
+      margin-bottom: 0
+    }
+  }
+
+  .notif-bell {
+    width: 35px;
+    padding-top: .3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    background: $fa-white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 7px;
+    margin-right: 2rem;
+
+    @include mdMaxBreakPoint {
+      margin-right: 1rem;
+    }
+  }
+
+  .dropdown-cta {
+    margin-top: -.7rem;
+
+    @include smMaxBreakPoint {
+      display: none;
+    }
+  }
+
+  .hamburger-icon {
+    cursor: pointer;
+  }
+
+
+  @include mdMaxBreakPoint {
+    padding: 1.4rem 1rem 0 1rem;
+
+    .page-title {
+      display: none;
+    }
+  }
+}

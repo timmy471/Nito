@@ -1,0 +1,27 @@
+.fa-float-label {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.fa-label {
+  font-size: 14px !important;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  color: $fa-grey-200 !important;
+  left: 12px;
+  top: 12px;
+  transition: 0.2s ease all;
+  z-index: 2;
+
+  span {
+    color: red;
+    margin-left: 5px;
+  }
+}
+
+.fa-label-float {
+  top: 1px;
+  font-size: 10px !important;
+  color: $fa-grey-200 !important;
+}

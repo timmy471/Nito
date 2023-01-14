@@ -1,0 +1,89 @@
+.fa_btn {
+  font-weight: 700;
+  font-size: 12px;
+  font-family: $font-family-primary;
+  border-radius: 5px;
+  font-style: normal;
+  border-color: unset;
+  border-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $fa-white;
+  width: 380px;
+  height: 50px;
+
+  @include buttonTransition();
+
+  &:focus {
+    outline: none;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: $fa-grey-500;
+  }
+
+  &:hover {
+    transform: translateY(-1.5px);
+  }
+
+  &__btn-disabled {
+    background-color: $fa-grey-500;
+  }
+
+  //color || variant
+  &__primary {
+    background-color: $fa-success;
+
+    &:hover,
+    &:focus {
+      background-color: rgba(5, 125, 205, 0.7) !important;
+      color: $fa-white  !important;
+    }
+  }
+
+  &__secondary {
+    background-color: transparent;
+    border: 1.5px solid $fa-success;
+    color: $fa-grey-100;
+
+    &:hover,
+    &:focus {
+      background-color: rgba(5, 125, 205, 0.1);
+    }
+  }
+
+  //sizes
+  &__lg {
+    width: 380px;
+  }
+
+  &__md {
+    width: 250px;
+  }
+
+  &__sm {
+    width: 170px;
+
+    @include smMaxBreakPoint {
+      width: 130px;
+      height: 45px;
+    }
+  }
+
+  // &__xs {
+  //   height: 
+  // }
+
+  &__full-width {
+    width: 100%;
+  }
+
+}
+
+.ant-btn-loading {
+  background-color: rgba(5, 125, 205, 0.7) !important;
+  color: $fa-white  !important;
+}

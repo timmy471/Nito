@@ -1,0 +1,28 @@
+.profile-image-container {
+    .profile-image {
+        width: 100px;
+        height: 100px;
+        left: 6px;
+        top: 10px;
+        border-radius: 50%;
+        background: $fa-white;
+        cursor: pointer;
+
+        p {
+            color: $fa-grey-200;
+            font-size: 12px;
+            margin-bottom: 0 !important
+        }
+    }
+
+    .uploaded-image {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+
+        img {
+            border-radius: 50%;
+        }
+    }
+}

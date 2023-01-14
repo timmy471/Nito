@@ -1,0 +1,318 @@
+.auth {
+  .fa_textfield {
+    border: 1px solid $fa-grey-400;
+    font-weight: 700;
+  }
+
+  .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+    border: 1px solid $fa-grey-400
+  }
+
+  .check-input {
+    h5 {
+      font-weight: 700;
+      font-size: 14px;
+      color: $fa-secondary-100;
+    }
+
+    .ant-checkbox-wrapper {
+      display: flex;
+      align-items: center;
+
+      label {
+        font-family: $font-family-primary;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        padding-top: 10px;
+        padding-left: 0px;
+      }
+
+      .ant-checkbox {
+        margin-top: -5px;
+      }
+
+      .ant-checkbox-checked .ant-checkbox-inner {
+        background-color: $fa-primary-100;
+        border-color: $fa-primary-100;
+        width: 24px;
+        height: 24px;
+        font-size: 24px;
+      }
+
+      .ant-checkbox-inner {
+        width: 24px;
+        height: 24px;
+        border-width: 1px;
+        border-radius: 5px;
+        border-color: $fa-primary-100;
+      }
+
+      .ant-checkbox-checked .ant-checkbox-inner::after {
+        position: absolute;
+        display: table;
+        border: 1px solid $fa-white;
+        border-top: 0;
+        border-left: 0;
+        transform: rotate(45deg) scale(1.5) translate(-30%, -60%);
+        opacity: 1;
+        transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+        content: ' ';
+      }
+    }
+  }
+
+  .login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 240px;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url('/assets/images/auth/auth-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+    @include xlMaxBreakPoint {
+      padding: 40px;
+    }
+
+    @include smMaxBreakPoint {
+      padding: 10px;
+    }
+
+    .form-container {
+
+      h1 {
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 50px;
+      }
+
+      h3 {
+        font-weight: 700;
+        font-size: 24px;
+      }
+
+      .aside {
+        min-height: 410px;
+      }
+
+      .aside:first-of-type {
+        span {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 13px;
+          margin-top: 15px;
+        }
+
+        padding: 80px 20px 80px 35px;
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(4px);
+        border-radius: 10px 0px 0px 10px;
+      }
+
+      .aside:nth-of-type(2) {
+        padding: 40px;
+        background: $fa-white;
+        border-radius: 0px 10px 10px 0px;
+
+        @include smMaxBreakPoint {
+          border-radius: 10px;
+        }
+
+        @include lgMaxBreakPoint {
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+
+  .half-paged {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url('/assets/images/auth/auth-half-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1 {
+      font-family: $font-family-secondary;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 44px;
+    }
+
+    h6 {
+      font-family: $font-family-primary;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+
+      span,
+      a {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration-line: underline;
+        color: $fa-black;
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
+    }
+
+    .container {
+      .left {
+        height: 100vh;
+        background-color: $fa-grey-600;
+        display: flex;
+        justify-content: center;
+
+        @include smMaxBreakPoint {
+          height: 100%;
+        }
+
+        @include mdMaxBreakPoint {
+          height: 100%;
+        }
+
+        .left-hero {
+          width: 380px;
+
+          @include smMaxBreakPoint {
+            padding: 30px;
+
+            button {
+              width: 100%;
+            }
+          }
+
+          @include mdMaxBreakPoint {
+            margin-bottom: 50px;
+          }
+
+          .box {
+            margin-top: 100px;
+          }
+
+          a {
+            margin-top: 20px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+            text-decoration-line: underline;
+            color: $fa-black;
+            text-align: center;
+          }
+
+          a:hover {
+            text-decoration: none;
+          }
+
+          .form {
+            margin-top: 20px;
+
+            #password,
+            #confirmPassword {
+              color: $fa-grey-200;
+              font-family: $font-family-primary;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+
+      .right-hero {
+        h1 {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 46px;
+          text-align: center;
+          padding: 40px;
+          color: $fa-white  !important;
+        }
+
+        @include smMaxBreakPoint {
+          padding: 40px;
+        }
+
+        @include mdMaxBreakPoint {
+          padding: 40px;
+        }
+      }
+
+      .verify-otp-input {
+        font-weight: 900;
+        font-size: 20px;
+        border-radius: 4px;
+      }
+
+      .desktop-cta {
+        position: absolute;
+        bottom: 2rem;
+        padding: 0 4rem;
+
+        p {
+          font-weight: 500;
+          font-size: 14px;
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .mobile-cta {
+      background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 93.28%),
+        url('/assets/images/auth/login-mobile-cta.jpg');
+      height: 375px;
+      width: 100%;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      color: $fa-white;
+
+      h1 {
+        font-size: 24px;
+        text-align: center;
+        color: $fa-white;
+        line-height: 26px;
+        margin: auto;
+
+        span {
+          font-family: $font-family-primary;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 13px;
+        }
+      }
+
+      .bottom-row {
+        margin: 0px 25px 40px 25px;
+
+        a {
+          color: $fa-white;
+          margin-bottom: auto;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 18px;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

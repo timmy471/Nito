@@ -1,0 +1,121 @@
+.dashboard-home {
+    .chart-card {
+        background: rgba(255, 255, 255, 0.3);
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+        border-radius: 7px;
+    }
+
+    .line-chart-container {
+        padding: 1.5rem 1rem 2.1rem 1rem;
+
+        .sub-container {
+            @include lgMaxBreakPoint {
+                margin-top: 2rem
+            }
+        }
+
+        .fa_selectfield {
+            background-color: $fa-grey-500  !important;
+        }
+
+        .date-select {
+            margin-top: -.8rem;
+            width: 105px;
+
+            .ant-select-borderless .ant-select-selector,
+            .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+                background-color: $fa-grey-500  !important;
+                height: 35px;
+                border-radius: 7px;
+                padding-left: 0rem !important;
+
+                .ant-select-selection-item {
+                    margin-top: -.5rem;
+                    margin-left: 5px;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .line-chart {
+            height: 13rem;
+            margin-top: .3rem
+        }
+    }
+
+    .pie-chart {
+        height: 15.8rem;
+        padding-top: 1rem;
+        border: 2px
+    }
+
+    .fm-chart-loader {
+        min-height: 17rem
+    }
+
+    .color-indicators {
+        p {
+            font-size: 10px !important
+        }
+
+        .approved {
+            width: 12px;
+            height: 12px;
+            background-color: #A6EAFF;
+            margin-right: .3rem
+        }
+
+        .pending {
+            width: 12px;
+            height: 12px;
+            background-color: #FF824D;
+            margin-right: .3rem;
+        }
+    }
+
+    .desktop-cards {
+        @include xlMaxBreakPoint {
+            display: none
+        }
+
+    }
+
+    .mobile-cards {
+        display: none;
+
+        @include xlMaxBreakPoint {
+            display: block;
+        }
+    }
+
+    .dashboard-cards {
+        .card-main {
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            height: 140px;
+            padding: 1rem 2rem !important;
+
+            @include xlMaxBreakPoint {
+                height: 150px;
+            }
+
+            @include lgMaxBreakPoint {
+                height: 160px
+            }
+
+            @include smMaxBreakPoint {
+                height: 120px
+            }
+
+            &__inverted {
+
+                p,
+                h3 {
+                    color: $fa-white
+                }
+
+            }
+        }
+    }
+}

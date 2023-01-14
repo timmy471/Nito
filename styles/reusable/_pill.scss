@@ -1,0 +1,59 @@
+.fa_pill {
+    width: 90px;
+    height: 32px;
+    border-radius: 15px;
+    border: 1px solid $fa-black;
+    display: flex;
+    overflow: hidden;
+
+    div {
+        height: 31px;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        &:nth-child(1) {
+            border-right: 1px solid $fa-black;
+        }
+    }
+
+
+    .selected {
+        background-color: $fa-black;
+        color: $fa-white
+    }
+
+}
+
+.fa_filter_pill {
+    width: fit-content;
+    padding: .3rem 1rem .6rem;
+    border-radius: 16px;
+    background-color: $fa-white;
+
+    &__selected {
+        background-color: $fa-primary-200;
+
+        p {
+            color: $fa-white;
+        }
+
+    }
+
+
+}
+
+.fa_detail_tag {
+    background: $fa-grey-500;
+    border-radius: 25px;
+    // width: 49px;
+    height: 25px;
+
+    p {
+        font-weight: 550;
+        font-size: 10px;
+
+    }
+}

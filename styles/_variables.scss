@@ -1,0 +1,49 @@
+/* FONT */
+$font-family-primary: 'Airbnb Cereal App', Fallback, sans-serif;
+$font-family-secondary: 'Adobe Caslon Pro', Fallback, sans-serif;
+
+/* Primary colors */
+$fa-primary-100: #43B0F1; //Blue Groto
+$fa-primary-200: #3cac70; //Green
+$fa-primary-300: #1E3D58; //Navy Blue
+
+
+/* Secondary Colors */
+$fa-secondary-100: #ba4141; //Red
+$fa-secondary-200: #282727; //Black
+$fa-secondary-300: #3e8ffd; // blue
+$fa-secondary-400: rgba(67, 176, 241, 0.4);
+// $fa-secondary-500: #057DCD;
+
+/* Status Colors */
+$fa-info: #2f80ed;
+$fa-success: #057DCD;
+$fa-warning: #e2b93b;
+$fa-error: #eb5757;
+$fa-disabled: #f3f3f3;
+
+/* Shade */
+$fa-black: #000000;
+$fa-white: #ffffff;
+
+/* Grey */
+$fa-grey-100: #333333;
+$fa-grey-200: #4f4f4f;
+$fa-grey-300: #828282;
+$fa-grey-400: #bdbdbd;
+$fa-grey-500: #e0e0e0;
+$fa-grey-600: #f0f0f0;
+$fa-grey-700: #e5e5e5;
+$fa-grey-800: #111111;
+$fa-grey-900: #1f1f1f;
+$fa-grey-1000: #1d1d1d;
+
+/* Gradients */
+$fa-blue-gradient: linear-gradient(180deg, $fa-primary-300 53.4%, $fa-success 141.5%);
+
+/* BREAKPOINTS */
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$screen-xxl: 1440px;

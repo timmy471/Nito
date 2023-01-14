@@ -1,0 +1,14 @@
+.slide-in-bottom {
+    -webkit-animation: slide-in-bottom 0.3s linear both;
+    animation: slide-in-bottom 0.3s linear both;
+}
+
+@keyframes slide-in-bottom {
+    0% {
+        transform: translateY(80px)
+    }
+
+    100% {
+        transform: translateY(0px)
+    }
+}

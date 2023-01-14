@@ -1,0 +1,79 @@
+.fa-table {
+    margin-top: 20px;
+
+    .ant-table-content {
+        background-color: #edf5f9;
+    }
+
+    .ant-table-thead>tr>th {
+        position: relative;
+        padding-bottom: 0px;
+        color: rgba(0, 0, 0, 0.85);
+        font-weight: 500;
+        text-align: left;
+        background: #edf5f9;
+        border-bottom: 1px solid #f0f0f0;
+        font-family: $font-family-primary;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        align-items: center;
+        color: #828282;
+        border: none;
+    }
+
+    .ant-table-tbody>tr {
+        background-color: rgba(255, 255, 255, 0.5);
+        background: rgba(255, 255, 255, 0.5);
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+        min-height: 100px;
+        border-radius: 7px;
+    }
+
+    .ant-table-thead>tr>th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 1px;
+        height: 1.6em;
+        background-color: rgba(0, 0, 0, 0.06);
+        transform: translateY(-50%);
+        transition: background-color 0.3s;
+        content: none;
+    }
+
+    .ant-table table {
+        cursor: pointer;
+        border-spacing: 0 10px;
+    }
+
+    td:first-child {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    @include xlMaxBreakPoint {
+        td:nth-child(2) {
+            min-width: 120px;
+            display: none;
+            visibility: hidden;
+        }
+    }
+
+    td:last-child {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    span {
+        line-height: 20px;
+        font-family: $font-family-primary;
+        align-items: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        color: #1d1d1d;
+    }
+
+}

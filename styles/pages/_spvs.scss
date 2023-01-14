@@ -1,0 +1,392 @@
+.spvs {
+  text-align: justify;
+  text-justify: inter-word;
+
+  h1 {
+    font-family: $font-family-secondary;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 35px;
+    color: #1d1d1d;
+  }
+
+  .metrics {
+    margin-top: 10px;
+    min-height: 140px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    border-radius: 7px;
+    gap: 10px;
+
+    .item {
+      border-right: 1px solid $fa-grey-400;
+      text-align: left;
+      padding: 0px 10px;
+
+      span {
+        font-family: 'Airbnb Cereal App';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 11px !important;
+        font-size: 14px;
+        line-height: 20px;
+        color: #737373;
+      }
+
+      h1 {
+        font-family: $font-family-secondary;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        color: #1d1d1d;
+        margin-top: 30px !important;
+        margin-bottom: 0px;
+      }
+    }
+
+    .item:last-child {
+      border-right: none;
+    }
+  }
+
+  .funds-list {
+    margin-top: 20px;
+    min-height: 140px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    border-radius: 7px;
+
+    p {
+      font-family: $font-family-primary;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      color: #1d1d1d;
+    }
+
+    h4 {
+      font-family: $font-family-primary;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 22px;
+      color: #1d1d1d;
+    }
+
+    span {
+      font-family: $font-family-primary;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      color: #828282;
+    }
+
+    a {
+      display: block;
+      margin-top: 1rem;
+      font-family: $font-family-primary;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 16px;
+    }
+
+    .fund {
+      border: 0.5px solid $fa-grey-400;
+      filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.05));
+      border-radius: 8px;
+      padding: 10px 20px;
+      margin-right: 20px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .table {
+    margin-top: 20px;
+
+    @include smMaxBreakPoint {
+      display: none;
+      visibility: hidden;
+    }
+
+    @include mdMaxBreakPoint {
+      display: none;
+      visibility: hidden;
+    }
+
+    @include lgMaxBreakPoint {
+      display: none;
+      visibility: hidden;
+    }
+
+    .ant-table-content {
+      background-color: #edf5f9;
+    }
+
+    .ant-table-thead>tr>th {
+      position: relative;
+      padding-bottom: 0px;
+      color: rgba(0, 0, 0, 0.85);
+      font-weight: 500;
+      text-align: left;
+      background: #edf5f9;
+      border-bottom: 1px solid #f0f0f0;
+      transition: background 0.3s ease;
+      font-family: $font-family-primary;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 18px;
+      align-items: center;
+      color: #828282;
+      border: none;
+    }
+
+    .ant-table-tbody>tr {
+      background-color: rgba(255, 255, 255, 0.5);
+      background: rgba(255, 255, 255, 0.5);
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+      min-height: 100px;
+      transition: background 0.3s;
+      border-radius: 7px;
+    }
+
+    .ant-table-thead>tr>th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 1px;
+      height: 1.6em;
+      background-color: rgba(0, 0, 0, 0.06);
+      transform: translateY(-50%);
+      transition: background-color 0.3s;
+      content: none;
+    }
+
+    .ant-table table {
+      cursor: pointer;
+      border-spacing: 0 10px;
+    }
+
+    td:first-child {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+
+    @include xlMaxBreakPoint {
+      td:nth-child(2) {
+        min-width: 120px;
+        display: none;
+        visibility: hidden;
+      }
+    }
+
+    @include lgMaxBreakPoint {
+      td:nth-child(2) {
+        min-width: 120px;
+        display: none;
+        visibility: hidden;
+      }
+    }
+
+    td:last-child {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    span {
+      line-height: 20px;
+      font-family: $font-family-primary;
+      align-items: center;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      color: #1d1d1d;
+    }
+
+    .stage-pill {
+      padding: 7px 15px;
+      background: #e0e0e0;
+      border-radius: 25px;
+      font-family: $font-family-primary;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      align-items: center;
+      text-align: center;
+      color: #1d1d1d;
+    }
+
+    .wired {
+      padding: 7px 15px;
+      background: #e0e0e0;
+      border-radius: 25px;
+      font-family: $font-family-primary;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 18px;
+      align-items: center;
+      text-align: center;
+      color: #1d1d1d;
+    }
+
+    .closing {
+      padding: 7px 15px;
+      background: rgba(255, 168, 0, 0.07);
+      border-radius: 25px;
+      font-family: $font-family-primary;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 18px;
+      align-items: center;
+      text-align: center;
+      color: #ffa800;
+    }
+
+    .raising {
+      padding: 7px 15px;
+      background: rgba(67, 176, 241, 0.07);
+      border-radius: 25px;
+      font-family: $font-family-primary;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 18px;
+      align-items: center;
+      text-align: center;
+      color: $fa-primary-100;
+    }
+
+    .company {
+      max-width: 350px;
+      margin: 0px;
+      padding: 0px;
+
+      img {
+        border-radius: 50%;
+      }
+
+      h4 {
+        font-family: $font-family-primary;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        color: #1d1d1d;
+        display: inline-block;
+        margin-left: 10px;
+        margin-left: 20px;
+
+        span {
+          font-family: $font-family-primary;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          color: #828282;
+        }
+      }
+
+      a {
+        font-family: $font-family-primary;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 16px;
+        color: #2f80ed;
+        margin: 20px;
+      }
+    }
+  }
+
+  .accordion-container {
+    display: none;
+    visibility: hidden;
+
+    @include smMaxBreakPoint {
+      display: block;
+      visibility: visible;
+    }
+
+    @include mdMaxBreakPoint {
+      display: block;
+      visibility: visible;
+    }
+
+    @include lgMaxBreakPoint {
+      display: block;
+      visibility: visible;
+    }
+
+    .wallet-accordion-panel {
+      border-radius: 12px !important;
+      background-color: $fa-white;
+      margin-bottom: 5px;
+    }
+
+    .ant-collapse-item-active {
+      background: transparent;
+      border: 1px solid $fa-grey-500;
+    }
+
+    .ant-collapse-borderless,
+    .ant-collapse {
+      background-color: transparent;
+    }
+
+    .ant-collapse-header-text {
+      width: 100%;
+    }
+
+    .wallet-detail {
+      line-height: 10px;
+      font-weight: 600;
+      color: #393636;
+    }
+  }
+}
+
+.spv-status-pill {
+  display: flex;
+  padding: 7px 20px;
+  height: 32px;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 25px;
+
+  @include xlMaxBreakPoint {
+    padding: 9px 16px 7px;
+    margin-top: -0.6rem;
+  }
+
+  &__raising {
+    background: rgba(47, 128, 237, 0.07);
+
+    p {
+      color: $fa-info;
+    }
+  }
+
+  &__closed {
+    background: rgba(235, 87, 87, 0.07);
+
+    p {
+      color: $fa-error;
+    }
+  }
+
+  &__seed {
+    margin: -0.2rem 0 0 1rem;
+    padding: 5px 16px 2px;
+    height: 1.6rem;
+  }
+
+}

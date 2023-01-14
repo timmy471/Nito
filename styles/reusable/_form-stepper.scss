@@ -1,0 +1,134 @@
+.form-stepper {
+  display: flex;
+
+  .status-indicator {
+    display: flex;
+    color: $fa-grey-200;
+    margin-right: 0.8rem;
+    flex-grow: 1;
+
+    .number-indicator {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .index {
+        opacity: 0.3;
+
+        &__active,
+        &__completed {
+          opacity: 1;
+        }
+      }
+
+      @include faMaxBreakPoint(640px) {
+        h5 {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .status-track {
+      border: 1px solid rgb(205, 226, 240);
+      width: 22px;
+      height: 22px;
+      display: flex;
+      color: $fa-white;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      margin-top: 0.5rem;
+
+      &__completed {
+        background-color: $fa-primary-100;
+        border: none;
+      }
+
+      &__active {
+        border: 1.5px solid $fa-primary-100;
+      }
+
+      @include lgMaxBreakPoint {
+        margin-top: 20%;
+      }
+    }
+
+    .text-indicator {
+      margin: 0 0.5rem;
+      width: 100%;
+      // text-align: center;
+
+      div {
+        border: 2px solid rgb(205, 226, 240);
+        margin-top: 1.4rem;
+      }
+
+      p {
+        opacity: 0.3;
+        margin-left: .4rem
+      }
+
+      &__active {
+        div {
+          border: 1.5px dashed $fa-primary-100;
+        }
+
+        p {
+          color: $fa-black;
+          opacity: 1;
+        }
+      }
+
+      &__completed {
+        div {
+          border: 1px solid $fa-primary-100;
+        }
+
+        p {
+          color: $fa-black;
+          opacity: 1;
+        }
+      }
+
+      @include lgMaxBreakPoint {
+        margin: 0 0.3rem;
+      }
+
+      @include faMaxBreakPoint(640px) {
+        display: none;
+        flex-grow: 0;
+        margin: 4.5% 0;
+
+        p {
+          margin-top: .3rem
+        }
+
+        div {
+          margin-top: 1.1rem;
+        }
+
+        &__active {
+          display: block;
+          margin-right: 2rem;
+          margin-left: 0.7rem;
+        }
+      }
+
+      @include smMaxBreakPoint {
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+
+    @include smMaxBreakPoint {
+      .number-indicator {
+        margin-top: 0.6rem;
+      }
+    }
+
+    @include smMaxBreakPoint {
+      margin-right: 0.2rem;
+    }
+  }
+}

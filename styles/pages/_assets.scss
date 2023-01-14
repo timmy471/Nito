@@ -1,0 +1,269 @@
+.assets-container {
+    .banner {
+        background: rgba(255, 255, 255, 0.3);
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+        border-radius: 7px;
+        padding: .5rem 1rem .5rem 2rem;
+
+        .filter-params-container {
+            display: flex;
+            height: 100%;
+            justify-content: flex-end;
+
+            .filter-params {
+                flex: 8;
+                margin-left: 1rem;
+
+                .select-field-container .ant-select .ant-select-selector {
+                    height: 40px;
+                    padding-top: 4px !important;
+                    font-size: 12px;
+                    width: 8rem;
+                }
+
+                @include mdMaxBreakPoint {
+                    display: none !important
+                }
+            }
+        }
+
+        .desktop-filter-cta {
+            @include mdMaxBreakPoint {
+                display: none;
+            }
+        }
+
+        .mobile-filter-cta {
+            display: none;
+
+            @include mdMaxBreakPoint {
+                display: flex;
+            }
+        }
+    }
+
+    .asset-name-container {
+        display: flex;
+        align-items: center;
+
+        img {
+            border-radius: 50%;
+            margin-right: 1rem
+        }
+
+        p {
+            margin-top: .6rem
+        }
+    }
+
+    .assets-table {
+        @include xlMaxBreakPoint {
+            display: none;
+        }
+    }
+
+
+    .asset-accordion-container {
+        display: none;
+
+        @include xlMaxBreakPoint {
+            display: block;
+        }
+
+        .asset-accordion-panel {
+            border-radius: 12px !important;
+            background-color: $fa-white;
+            margin-bottom: 5px;
+        }
+
+        .ant-collapse-item-active {
+            background: transparent;
+            border: 1px solid $fa-grey-500;
+        }
+
+        .ant-collapse-borderless,
+        .ant-collapse {
+            background-color: transparent
+        }
+
+        .ant-collapse-header-text {
+            width: 100%
+        }
+
+        .asset-detail {
+            line-height: 10px;
+            font-weight: 600;
+            color: #393636;
+        }
+    }
+}
+
+.asset-detail-container {
+
+    .asset-detail {
+        margin-left: -.7rem
+    }
+
+    .date-created {
+        margin-top: -.5rem;
+        font-size: 13px
+    }
+
+    .about {
+        font-size: 13px;
+        margin-bottom: .5rem;
+
+        &__link {
+            margin-top: -.2rem
+        }
+    }
+
+    .founder {
+        margin-right: 5rem
+    }
+
+    .action-ctas {
+        .fa_btn__secondary {
+            width: 120px;
+        }
+
+        @include mdMaxBreakPoint {
+            flex-direction: column-reverse;
+
+            button {
+                margin-top: 1.5rem;
+            }
+        }
+    }
+
+    img {
+        border-radius: 50%;
+    }
+}
+
+.asset-status-pill {
+    display: flex;
+    padding: 7px 20px;
+    height: 32px;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 25px;
+
+    @include xlMaxBreakPoint {
+        padding: 9px 16px 7px;
+        margin-top: -.6rem;
+    }
+
+    &__published {
+        background: rgba(47, 128, 237, 0.07);
+
+        p {
+            color: $fa-info;
+        }
+    }
+
+    &__draft {
+        background: rgba(235, 87, 87, 0.07);
+
+        p {
+            color: $fa-error;
+        }
+    }
+
+    &__detail {
+        margin: -.2rem 0 0 1rem;
+        padding: 5px 16px 2px;
+        height: 1.6rem;
+    }
+}
+
+.asset-form {
+    .fa_textfield_container {
+        .placeholder {
+            color: $fa-grey-400;
+        }
+    }
+
+    .asset-text-area {
+        border-radius: 6px;
+        background-color: $fa-white  !important;
+    }
+
+    .no-border {
+        border: none;
+    }
+
+    .cta-btns {
+        margin-top: 18rem;
+
+        @include smMaxBreakPoint {
+            button {
+                width: 7rem;
+            }
+        }
+    }
+
+    .founders-container {
+        border-radius: 3px;
+        width: 100%;
+
+        .founder-form {
+            background-color: #cecece;
+            border-radius: 3px;
+            padding: 1rem .5rem 1.5rem;
+
+            .fa_textfield {
+                height: 46px;
+            }
+
+            .placeholder {
+                font-size: 12px;
+                color: $fa-grey-200;
+                top: .8rem
+            }
+        }
+
+        button {
+            height: 46px
+        }
+    }
+
+    .founders-detail-container {
+        &__exist {
+            background-color: #e0e0e0;
+        }
+
+        padding: 1rem;
+
+        .founder-image {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin: 0 auto;
+            position: relative;
+
+            img {
+                border-radius: 50%;
+            }
+
+            .cancel-img {
+                position: absolute;
+                left: 4rem;
+                top: -.5rem;
+                cursor: pointer
+            }
+        }
+    }
+
+    .detail-fields {
+        @include smMaxBreakPoint {
+            margin-top: 1.2rem;
+            padding-left: 0 !important;
+
+            button {
+                width: 100%;
+            }
+        }
+
+    }
+}
